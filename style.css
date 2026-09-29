@@ -1,0 +1,50 @@
+.tetris-board {
+    display: grid;
+    grid-template-columns: repeat(6, 40px);
+    grid-template-rows: repeat(6, 40px);
+    grid-template-areas:
+".  .  o1 o2 .  ."
+"i1 .  o3 o4 . l1"
+"i2 .  . z3  z4 l2"
+"i3 .  z1 z2 l4 l3"
+"i4 . t1 t2 t3  ."
+".  .  . t4 .   .";
+gap:4px;
+padding: 12px;
+width: max-content;
+background: lavender;
+}
+.block {
+    border-radius: 5px;
+}
+
+.z { background: #00fe00;}
+.i { background: #4169e2;}
+.o { background: #fed601;}
+.t { background: #ff1494;}
+.l { background: #308958;}
+
+#i1 { grid-area: i1;}
+#i2 { grid-area: i2;}
+#i3 { grid-area: i3;}
+#i4 { grid-area: i4;}
+
+#o1 { grid-area: o1;}
+#o2 { grid-area: o2;}
+#o3 { grid-area: o3;}
+#o4 { grid-area: o4;}
+
+#l1 { grid-area: l1;}
+#l2 { grid-area: l2;}
+#l3 { grid-area: l3;}
+#l4 { grid-area: l4;}
+
+#t1 { grid-area: t1;}
+#t2 { grid-area: t2;}
+#t3 { grid-area: t3;}
+#t4 { grid-area: t4;}
+
+#z1 { grid-area: z1;}
+#z2 { grid-area: z2;}
+#z3 { grid-area: z3;}
+#z4 { grid-area: z4;}
